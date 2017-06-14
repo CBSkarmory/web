@@ -1,0 +1,24 @@
+.MainTitle {
+    background-color: cornflowerblue; /*backup in case gradients are not supported*/
+    background: radial-gradient(lightblue, cornflowerblue);
+    color: white;
+    text-shadow: 4px 4px 8px blue;
+    border: 1px solid cornflowerblue;
+}
+
+/*
+.NavBar {
+    border: 2px dotted blue;
+}
+*/
+.ChromiumPic {
+    border: 3px dashed lightgreen;
+}
+ul > li {
+    font-size: 16px;
+/*    color: blue;*/
+}
+ul > li > ul > li{
+    font-size: 12px;
+/*    color: green;*/
+}
