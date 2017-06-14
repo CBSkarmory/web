@@ -6,29 +6,22 @@
     border: 1px solid cornflowerblue;
 }
 
-/*
-.NavBar {
-    border: 2px dotted blue;
-}
-*/
 .ChromiumPic {
     border: 3px dashed lightgreen;
 }
 ul > li {
     font-size: 16px;
-/*    color: blue;*/
 }
 ul > li > ul > li{
     font-size: 12px;
-/*    color: green;*/
 }
 body {
     background-color:lightgray;
 }
 code {
-/*    color: chartreuse;*/
     font: 12px courier, sans-serif;
 }
 lumi {
     color:chartreuse;
+=======
 }
