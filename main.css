@@ -22,3 +22,13 @@ ul > li > ul > li{
     font-size: 12px;
 /*    color: green;*/
 }
+body {
+    background-color:lightgray;
+}
+code {
+/*    color: chartreuse;*/
+    font: 12px courier, sans-serif;
+}
+lumi {
+    color:chartreuse;
+}
