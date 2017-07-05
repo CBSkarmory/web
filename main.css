@@ -31,8 +31,73 @@ lumi {
 }
 button {
     color: white;
-    background: green;
+    background: green; /*backup in case gradients are not supported*/
+    background: linear-gradient(lightgreen, green);
     border-radius: 40px;
     padding: 1px 8px;
     margin-top: 12px;
+}
+
+#headerType {
+/*    padding-right: 128px;*/
+}
+#headerLSR {
+    display: block;
+    text-align: center;
+}
+#headerVer {
+/*    padding-right: 32px;*/
+}
+
+.row {
+    display: flex;
+    max-width: 100%;
+}
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 1/12;}
+.col-2 {width: 2/12;}
+.col-3 {width: 3/12;}
+.col-4 {width: 4/12;}
+.col-5 {width: 5/12;}
+.col-6 {width: 6/12;}
+.col-7 {width: 7/12;}
+.col-8 {width: 8/12;}
+.col-9 {width: 9/12;}
+.col-10 {width: 10/12;}
+.col-11 {width: 11/12;}
+.col-12 {width: 100%;}
+
+.spacer {
+    width: 1/12;
+    padding-right: 12px;
+}
+
+latest {
+    color:darkgreen;
+}
+oldver {
+    color:darkgoldenrod;
+}
+beta {
+    color:crimson;
+}
+NYI {
+    color:dimgray;
+}
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    border: 0px solid red;
+    float: left;
+/*    padding: 10px;*/
+}
+[class=row] {
+    border: 0px solid green;
 }
