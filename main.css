@@ -1,9 +1,11 @@
 .MainTitle {
+    margin: 0;
+    padding: 0;
+    border: 0;
     background-color: cornflowerblue; /*backup in case gradients are not supported*/
     background: radial-gradient(lightblue, cornflowerblue);
     color: white;
     text-shadow: 4px 4px 8px blue;
-    border: 1px solid cornflowerblue;
 }
 
 .ChromiumPic {
@@ -22,6 +24,10 @@ ul > li > ul > li{
 }
 body {
     background-color:lightgray;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,h7,p,form,downloads {
+    margin: 8px;
 }
 code {
     font: 12px courier, sans-serif;
@@ -89,6 +95,11 @@ beta {
 NYI {
     color:dimgray;
 }
+
+#LSRDL, #CEBDL {
+    display: block;
+}
+
 * {
     box-sizing: border-box;
 }
