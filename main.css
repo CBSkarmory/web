@@ -49,7 +49,7 @@ nav > ul > li#buttonExpander {
     display: none;
 }
 /*-----mobile-----*/
-@media screen and (max-width:461px){
+@media screen and (max-width:1080px) and (orientation:portrait){
     nav > ul > li:not(:nth-child(1)) {
         display: none;
     }
