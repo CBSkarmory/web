@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script type="text/javascript" src="scripts.js"></script>
         <title>UltraChrome</title>
         <link rel="icon" href = "https://www.chromium.org/_/rsrc/1484148948583/apple-touch-icon.png" 
               >
@@ -17,20 +19,24 @@
                         
                         height="128" 
                         width="128"></td>
-                    <td><h1>Ultra Chrome</h1></td>
+                    <td><h1><big>Ultra Chrome</big></h1></td>
                 </tr>
             </table>
         </div>
         <nav>
-            <ul class="navbar">
+            <ul class="NavBar" id="dropDownClick">
                 <li id="buttonHome"><a href = "#Home">Home</a></li>
                 <li id="buttonSource"><a href = "#Downloads">Downloads</a></li>
                 <li id="buttonSource"><a href = "#Source">Source</a></li>
                 <li id="buttonRoadmap"><a href = "#Roadmap">Roadmap</a></li>
                 <li id="buttonContact"><a href = "#Contact">Contact</a></li>
-                <li class="ItemRight" id="buttonExpander"><a href="">&#9776;</a></li>
+                <li class="ItemRight" id="buttonExpander"><a href="javascript:void(0);" onclick="expandMenu()">&#9776;</a></li>
             </ul>
         </nav>
+        
+        
+        
+        
 <!--        <hr>-->
         <h2>What is UltraChrome?</h2>
         <p>UltraChrome is an open-source, NASA* backed, web browser like Google Chrome, but it is much faster, more RAM friendly, and faster.  In short, it is superior to chrome <b>By Far</b>.</p>

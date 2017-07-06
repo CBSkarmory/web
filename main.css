@@ -37,43 +37,57 @@ nav > ul {
     margin: 0;
     padding: 0;
 }
-nav > ul > li {
+nav > ul.NavBar > li {
     list-style: none;
     float: left;
-    padding: 8px;    
+    font: 1rem ubuntu, sans-serif;
 }
 nav > ul > li.ItemRight {
     float: right;
 }
-nav > ul > li#buttonExpander {
+nav > ul.NavBar > li#buttonExpander {
     display: none;
 }
 /*-----mobile-----*/
-@media screen and (max-width:1080px) and (orientation:portrait){
-    nav > ul > li:not(:nth-child(1)) {
+/*
+@media screen and (max-width:1080px) and (orientation:portrait),
+@media screen and (max-width:461px)
+*/
+@media screen and (orientation:portrait){
+    nav > ul.NavBar > li:not(:nth-child(1)) {
         display: none;
     }
-    nav > ul > li#buttonExpander {
+    nav > ul.NavBar > li#buttonExpander {
         display: block;
     }
-    nav > ul > li > a {
-        font-size: 24px;
+    nav > ul.NavBar > li > a {
+        font-size: 3rem;
+    }
+    
+    ul.NavBarResponsive > li#buttonExpander {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.NavBarResponsive {
+    position: relative;
+    }
+    ul.NavBarResponsive > li {
+        display: inline;
+        float: none;
+        font: 3rem ubuntu, sans-serif;
+    }
+    nav > ul > li {
+      padding: 0px;  
+    }
+    ul.NavBarResponsive  a {
+        display: block;
+        text-align: left;
     }
 }
 
-@media screen and (max-width:461px){
-    nav > ul > li:not(:nth-child(1)) {
-        display: none;
-    }
-    nav > ul > li#buttonExpander {
-        display: block;
-    }
-    nav > ul > li > a {
-        font-size: 24px;
-    }
-}
 /*-----end_mobile-----*/
-nav > ul > li:hover {
+nav > ul > li > a:hover {
     color:white;
     background: linear-gradient(cornflowerblue,blue);
 }
@@ -87,6 +101,9 @@ nav > ul > li > a {
 }
 downloads {
     display:block;
+}
+big {
+    font: 4rem ubuntu;
 }
 h1,h2,h3,h4,h5,h6,h7,p,form,downloads {
     margin: 8px;
@@ -106,15 +123,9 @@ button {
     margin-top: 12px;
 }
 
-#headerType {
-/*    padding-right: 128px;*/
-}
 #headerLSR {
     display: block;
     text-align: center;
-}
-#headerVer {
-/*    padding-right: 32px;*/
 }
 
 .row {
@@ -169,7 +180,6 @@ NYI {
 [class*="col-"] {
     border: 0px solid red;
     float: left;
-/*    padding: 10px;*/
 }
 [class=row] {
     border: 0px solid green;
