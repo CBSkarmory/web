@@ -65,7 +65,7 @@ nav > ul > li:hover {
 nav > ul > li > a {
     display: block;
     text-decoration: none;
-    min-height: 14px;
+    min-height: 24px;
     text-align: center;
     text-transform: uppercase;
     color: white;
