@@ -16,12 +16,7 @@
     display: block;
     margin: auto;
 }
-ul > li {
-    font-size: 16px;
-}
-ul > li > ul > li{
-    font-size: 12px;
-}
+
 body {
     background-color:lightgray;
     margin: 0;
@@ -48,11 +43,30 @@ nav > ul > li.ItemRight {
 nav > ul.NavBar > li#buttonExpander {
     display: none;
 }
+/*-----default_font-----*/
+nav > ul.NavBar > li {
+    font: 1rem ubuntu, sans-serif;
+}
+p {
+    font: 1rem;
+}
+ul > li > ul > li{
+    font-size: 0.75rem;
+}
+ul.list > li {
+    font-size: 1rem;
+}
+code {
+    font: 0.75rem courier, sans-serif;
+}
+.DLHeader {
+    font: 1.25rem ubuntu;
+}
+form {
+    font-size: 1rem;
+}
+/*-----end_default_fonts-----*/
 /*-----mobile-----*/
-/*
-@media screen and (max-width:1080px) and (orientation:portrait),
-@media screen and (max-width:461px)
-*/
 @media screen and (orientation:portrait){
     nav > ul.NavBar > li:not(:nth-child(1)) {
         display: none;
@@ -63,32 +77,57 @@ nav > ul.NavBar > li#buttonExpander {
     nav > ul.NavBar > li > a {
         font-size: 3rem;
     }
-    
+
     ul.NavBarResponsive > li#buttonExpander {
         position: absolute;
         top: 0;
         right: 0;
     }
     ul.NavBarResponsive {
-    position: relative;
+        position: relative;
     }
     ul.NavBarResponsive > li {
         display: inline;
         float: none;
-        font: 3rem ubuntu, sans-serif;
     }
     nav > ul > li {
-      padding: 0px;  
+        padding: 0px;
     }
     ul.NavBarResponsive  a {
         display: block;
         text-align: left;
     }
-}
 
+    /*------Mobile_font------*/
+    code {
+        font: 1.5rem courier, sans-serif;
+    }
+    ul.NavBarResponsive > li {
+        font: 3rem ubuntu, sans-serif;
+    }
+    big {
+        font: 6rem ubuntu;
+    }
+    p {
+        font-size: 2rem;
+    }
+    ul > li > ul > li{
+        font-size: 1.5rem;
+    }
+    ul.list > li {
+        font-size: 2rem;
+    }
+    .DLHeader {
+        font: 2.5rem ubuntu;
+    }
+    form {
+        font-size: 2rem;
+    }
+}
 /*-----end_mobile-----*/
 nav > ul > li > a:hover {
     color:white;
+    background: blue; /*Backup*/
     background: linear-gradient(cornflowerblue,blue);
 }
 nav > ul > li > a {
@@ -98,6 +137,7 @@ nav > ul > li > a {
     text-align: center;
     text-transform: uppercase;
     color: white;
+    padding: 0.25rem;
 }
 downloads {
     display:block;
@@ -107,9 +147,6 @@ big {
 }
 h1,h2,h3,h4,h5,h6,h7,p,form,downloads {
     margin: 8px;
-}
-code {
-    font: 12px courier, sans-serif;
 }
 lumi {
     color:chartreuse;
@@ -127,9 +164,15 @@ button {
     display: block;
     text-align: center;
 }
-
+.container {
+    widows: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
 .row {
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
 }
 .row::after {
