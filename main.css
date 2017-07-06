@@ -11,6 +11,7 @@
 .ChromiumPic {
     border-radius: 12%;
     max-width: 100%;
+    min-width: 25%;
     height: auto;
     padding: 1px;
     display: block;
@@ -64,6 +65,21 @@ code {
 }
 form {
     font-size: 1rem;
+}
+h1,h2,h3,h4,h5,h6,h7 {
+    font: 1rem ubuntu;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
 }
 /*-----end_default_fonts-----*/
 /*-----mobile-----*/
@@ -122,6 +138,18 @@ form {
     }
     form {
         font-size: 2rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2.5rem;
     }
 }
 /*-----end_mobile-----*/
