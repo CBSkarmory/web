@@ -56,8 +56,23 @@ nav > ul > li#buttonExpander {
     nav > ul > li#buttonExpander {
         display: block;
     }
+    nav > ul > li > a {
+        font-size: 24px;
+    }
 }
 
+@media screen and (max-width:461px){
+    nav > ul > li:not(:nth-child(1)) {
+        display: none;
+    }
+    nav > ul > li#buttonExpander {
+        display: block;
+    }
+    nav > ul > li > a {
+        font-size: 24px;
+    }
+}
+/*-----end_mobile-----*/
 nav > ul > li:hover {
     color:white;
     background: linear-gradient(cornflowerblue,blue);
