@@ -210,7 +210,7 @@ input.MessageBox {
         font-size: 3rem;
     }
 
-    ul.NavBarResponsive > li#buttonExpander notmypassword
+    ul.NavBarResponsive > li#buttonExpander
     {
         position: absolute;
         top: 0;
