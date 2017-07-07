@@ -10,8 +10,9 @@
 
 .ChromiumPic {
     border-radius: 12%;
-    max-width: 100%;
+    max-width: 75%;
     min-width: 25%;
+    max-height: 256px;
     height: auto;
     padding: 1px;
     display: block;
@@ -82,6 +83,121 @@ h4 {
     font-size: 1.25rem;
 }
 /*-----end_default_fonts-----*/
+
+nav > ul > li > a:hover {
+    color:white;
+    background: blue; /*Backup*/
+    background: linear-gradient(cornflowerblue,blue);
+}
+nav > ul > li > a {
+    display: block;
+    text-decoration: none;
+    min-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.25rem;
+}
+downloads {
+    display:block;
+}
+big {
+    font: 4rem ubuntu;
+}
+h1,h2,h3,h4,h5,h6,h7,p,form,downloads {
+    margin: 8px;
+}
+lumi {
+    color:chartreuse;
+}
+button {
+    color: white;
+    background: green; /*backup in case gradients are not supported*/
+    background: linear-gradient(lightgreen, green);
+    border-radius: 40px;
+    padding: 1px 8px;
+    margin-top: 12px;
+}
+
+#headerLSR {
+    display: block;
+    text-align: center;
+}
+.container {
+    widows: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.center {
+    margin: auto;
+    padding-left: 16%;
+    padding-right: 16%;
+    float: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.67%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.67%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.67%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.67%;}
+.col-12 {width: 100%;}
+
+.spacer {
+/*    width: 1/12;*/
+    padding-right: 12px;
+    min-height: 88px;
+}
+
+latest {
+    color:darkgreen;
+}
+oldver {
+    color:darkgoldenrod;
+}
+beta {
+    color:crimson;
+}
+NYI {
+    color:dimgray;
+}
+
+#LSRDL, #CEBDL {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+input.MessageBox {
+    min-width: 256px;
+    height: 4rem;
+}
+[class*="col-"] {
+    border: 0px solid red;
+    float: left;
+    border-collapse: collapse;
+}
+[class=row] {
+    border: 0px solid green;
+}
+
 /*-----mobile-----*/
 @media screen and (orientation:portrait){
     nav > ul.NavBar > li:not(:nth-child(1)) {
@@ -94,7 +210,8 @@ h4 {
         font-size: 3rem;
     }
 
-    ul.NavBarResponsive > li#buttonExpander {
+    ul.NavBarResponsive > li#buttonExpander notmypassword
+    {
         position: absolute;
         top: 0;
         right: 0;
@@ -151,107 +268,9 @@ h4 {
     h4 {
         font-size: 2.5rem;
     }
+    input[type="text"] {
+        font-size: 2rem;
+        min-width: 128px;
+    }
 }
 /*-----end_mobile-----*/
-nav > ul > li > a:hover {
-    color:white;
-    background: blue; /*Backup*/
-    background: linear-gradient(cornflowerblue,blue);
-}
-nav > ul > li > a {
-    display: block;
-    text-decoration: none;
-    min-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    padding: 0.25rem;
-}
-downloads {
-    display:block;
-}
-big {
-    font: 4rem ubuntu;
-}
-h1,h2,h3,h4,h5,h6,h7,p,form,downloads {
-    margin: 8px;
-}
-lumi {
-    color:chartreuse;
-}
-button {
-    color: white;
-    background: green; /*backup in case gradients are not supported*/
-    background: linear-gradient(lightgreen, green);
-    border-radius: 40px;
-    padding: 1px 8px;
-    margin-top: 12px;
-}
-
-#headerLSR {
-    display: block;
-    text-align: center;
-}
-.container {
-    widows: 100%;
-    margin: auto;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-.row::after {
-    display: block;
-    clear: both;
-    content: "";
-}
-
-.col-1 {width: 1/12;}
-.col-2 {width: 2/12;}
-.col-3 {width: 3/12;}
-.col-4 {width: 4/12;}
-.col-5 {width: 5/12;}
-.col-6 {width: 6/12;}
-.col-7 {width: 7/12;}
-.col-8 {width: 8/12;}
-.col-9 {width: 9/12;}
-.col-10 {width: 10/12;}
-.col-11 {width: 11/12;}
-.col-12 {width: 100%;}
-
-.spacer {
-    width: 1/12;
-    padding-right: 12px;
-}
-
-latest {
-    color:darkgreen;
-}
-oldver {
-    color:darkgoldenrod;
-}
-beta {
-    color:crimson;
-}
-NYI {
-    color:dimgray;
-}
-
-#LSRDL, #CEBDL {
-    display: block;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-[class*="col-"] {
-    border: 0px solid red;
-    float: left;
-}
-[class=row] {
-    border: 0px solid green;
-}
