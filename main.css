@@ -7,12 +7,12 @@
     color: white;
     text-shadow: 4px 4px 8px blue;
 }
-
+div.LSR, div.CEB {
+    padding-left: 15%;}
 .ChromiumPic {
     border-radius: 12%;
-    max-width: 75%;
-    min-width: 25%;
-    max-height: 256px;
+    max-width: 192px;
+    max-height: 192px;
     height: auto;
     padding: 1px;
     display: block;
@@ -164,19 +164,17 @@ div.RighCol {
 .col-12 {width: 100%;}
 
 .spacer {
-/*    width: 1/12;*/
     padding-right: 12px;
-/*    min-height: 88px;*/
 overflow: hidden
 }
 
-latest {
+latest, latest > div > a {
     color:darkgreen;
 }
-oldver {
+oldver, oldver > div > a {
     color:darkgoldenrod;
 }
-beta {
+beta, beta > div > a{
     color:crimson;
 }
 NYI {
@@ -186,7 +184,9 @@ NYI {
 #LSRDL, #CEBDL {
     display: block;
 }
-
+div.DLSubsection {
+    margin-left: 4%;
+}
 * {
     box-sizing: border-box;
 }
@@ -202,7 +202,12 @@ input.MessageBox {
 [class=row] {
     border: 0px solid green;
 }
-
+input[type="text"] {
+    border-radius: 0.5rem;
+}
+    p.PH {
+        margin:0px;
+    }
 /*-----mobile-----*/
 @media screen and (orientation:portrait){
     nav > ul.NavBar > li:not(:nth-child(1)) {
@@ -235,12 +240,19 @@ input.MessageBox {
         display: block;
         text-align: left;
     }
-    /*------Mobile_col-width------*/
+    /*------Mobile_spacing------*/
     .col-6 {
         width: 100%;
         margin: 0;
     }
-    
+    div.LeftCol {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    img.ChromiumPic {
+        width:65%;
+        max-height: inherit;
+    }
     /*------Mobile_font------*/
     code {
         font: 1.5rem courier, sans-serif;
@@ -253,6 +265,9 @@ input.MessageBox {
     }
     p {
         font-size: 2rem;
+    }
+    p.PH {
+        font-size: 1.5rem;
     }
     ul > li > ul > li{
         font-size: 1.5rem;
@@ -281,6 +296,7 @@ input.MessageBox {
     input[type="text"] {
         font-size: 2rem;
         min-width: 128px;
+        
     }
 }
 /*-----end_mobile-----*/
