@@ -41,7 +41,6 @@ nav > ul {
 nav > ul.NavBar > li {
     list-style: none;
     float: left;
-    font: 1rem ubuntu, sans-serif;
 }
 nav > ul > li.ItemRight {
     float: right;
@@ -243,9 +242,6 @@ div.DLSubsection {
     margin-left: 4%;
     margin-top: 2px;
 }
-* {
-    box-sizing: border-box;
-}
 input.MessageBox {
     min-width: 256px;
     height: 4rem;
@@ -270,11 +266,13 @@ div.DLContainer {
 
 /*-----mobile-----*/
 @media screen and (max-width:1199px){
+    /*:not selector may be making page slow on mobile devices? still very snappy on my desktop*/
     nav > ul.NavBar:not(.Open) > li:not(:nth-child(1)) {
         display: none;
     }
     nav > ul.NavBar > li#buttonExpander {
         display: block;
+        margin-bottom: auto;
     }
     nav > ul.NavBar > li > a {
         font-size: 3rem;

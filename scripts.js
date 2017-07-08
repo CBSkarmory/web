@@ -21,20 +21,17 @@ window.onresize = function ( ) {
 //detect OS for DL button
 window.onload = function ( ) {
     //detect
-    var ua = navigator.userAgent.toLocaleLowerCase();
-    var aV = navigator.appVersion;
+    var userAgent = navigator.userAgent.toLocaleLowerCase();
     var opSys = "idk";
-    if (navigator.appVersion.indexOf("Win")!=-1) opSys="Windows";
-    if (navigator.appVersion.indexOf("Linux")!=-1) opSys="Linux";
-    if (navigator.userAgent.toLowerCase().indexOf("android")!=-1) opSys = "Android";
+    if (navigator.appVersion.indexOf("Win")!=-1) {opSys="Windows";}
+    if (navigator.appVersion.indexOf("Linux")!=-1) {opSys="Linux";}
+    if (userAgent.indexOf("android")!=-1) {opSys = "Android";}
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) opSys = "iOS";
-//    alert.("OS: "+opSys+"\nUA: "+navigator.userAgent.toLowerCase());
     //hide not applicables
     if (opSys != "Linux") document.getElementById("linuxDL").className += " HideMe";
     if (opSys != "Windows") document.getElementById("windowsDL").className += " HideMe";
     if (opSys != "Android") document.getElementById("androidDL").className += " HideMe";
     if (opSys != "iOS") document.getElementById("iOSDL").className += " HideMe";
-    
     //other
     if (opSys == "Windows" || opSys == "Linux" || opSys=="Android" || opSys=="iOS") {
         document.getElementById("otherDL").className += " HideMe";
