@@ -8,7 +8,8 @@
     text-shadow: 4px 4px 8px blue;
 }
 div.LSR, div.CEB {
-    padding-left: 15%;}
+    padding-left: 15%;
+}
 .ChromiumPic {
     border-radius: 12%;
     max-width: 192px;
@@ -96,7 +97,7 @@ nav > ul > li > a {
     text-align: center;
     text-transform: uppercase;
     color: white;
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 downloads {
     display:block;
@@ -165,7 +166,7 @@ div.RighCol {
 
 .spacer {
     padding-right: 12px;
-overflow: hidden
+    overflow: hidden
 }
 
 latest, latest > div > a {
@@ -186,6 +187,7 @@ NYI {
 }
 div.DLSubsection {
     margin-left: 4%;
+    margin-top: 2px;
 }
 * {
     box-sizing: border-box;
@@ -205,12 +207,15 @@ input.MessageBox {
 input[type="text"] {
     border-radius: 0.5rem;
 }
-    p.PH {
-        margin:0px;
-    }
+p.PH {
+    margin:0px;
+}
+div.DLContainer {
+    margin-top: 0.5rem;
+}
 /*-----mobile-----*/
-@media screen and (orientation:portrait){
-    nav > ul.NavBar > li:not(:nth-child(1)) {
+@media screen and (max-width:1199px){
+    nav > ul.NavBar:not(.Open) > li:not(:nth-child(1)) {
         display: none;
     }
     nav > ul.NavBar > li#buttonExpander {
@@ -220,26 +225,27 @@ input[type="text"] {
         font-size: 3rem;
     }
 
-    ul.NavBarResponsive > li#buttonExpander
+    ul.NavBar.Open > li#buttonExpander
     {
         position: absolute;
         top: 0;
         right: 0;
     }
-    ul.NavBarResponsive {
+    ul.NavBar.Open {
         position: relative;
     }
-    ul.NavBarResponsive > li {
+    ul.NavBar.Open > li {
         display: inline;
         float: none;
     }
     nav > ul > li {
         padding: 0px;
     }
-    ul.NavBarResponsive  a {
+    ul.NavBar.Open  a {
         display: block;
         text-align: left;
     }
+
     /*------Mobile_spacing------*/
     .col-6 {
         width: 100%;
@@ -253,11 +259,16 @@ input[type="text"] {
         width:65%;
         max-height: inherit;
     }
+    div.DLSubsection {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     /*------Mobile_font------*/
     code {
         font: 1.5rem courier, sans-serif;
     }
-    ul.NavBarResponsive > li {
+    ul.NavBar.Open > li {
         font: 3rem ubuntu, sans-serif;
     }
     big {
@@ -296,7 +307,7 @@ input[type="text"] {
     input[type="text"] {
         font-size: 2rem;
         min-width: 128px;
-        
+
     }
 }
 /*-----end_mobile-----*/
