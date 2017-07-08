@@ -11,26 +11,32 @@ function updateMenu(forceClose) {
 }
 
 //automatically closes menu (while hiding) upon resize to desktop res
-window.onresize = function(){
+window.onresize = function ( ) {
     //seems to be desktop
-    if(window.innerWidth>1199) {
+    if (window.innerWidth > 1199) {
         updateMenu(true);
     }
 };
 
 //detect OS for DL button
-window.onload = function(){
+window.onload = function ( ) {
+    //detect
+    var ua = navigator.userAgent.toLocaleLowerCase();
+    var aV = navigator.appVersion;
     var opSys = "idk";
     if (navigator.appVersion.indexOf("Win")!=-1) opSys="Windows";
     if (navigator.appVersion.indexOf("Linux")!=-1) opSys="Linux";
-    if (opSys != "Linux") {
-        document.getElementById("linuxDL").className += " HideMe";
-    }
-    if (opSys != "Windows") {
-        document.getElementById("windowsDL").className += " HideMe";
-    }
-    if (opSys == "Windows" || opSys == "Linux") {
+    if (navigator.userAgent.toLowerCase().indexOf("android")!=-1) opSys = "Android";
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) opSys = "iOS";
+//    alert.("OS: "+opSys+"\nUA: "+navigator.userAgent.toLowerCase());
+    //hide not applicables
+    if (opSys != "Linux") document.getElementById("linuxDL").className += " HideMe";
+    if (opSys != "Windows") document.getElementById("windowsDL").className += " HideMe";
+    if (opSys != "Android") document.getElementById("androidDL").className += " HideMe";
+    if (opSys != "iOS") document.getElementById("iOSDL").className += " HideMe";
+    
+    //other
+    if (opSys == "Windows" || opSys == "Linux" || opSys=="Android" || opSys=="iOS") {
         document.getElementById("otherDL").className += " HideMe";
     }
-    alert("OS: "+opSys);
 }
