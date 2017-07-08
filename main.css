@@ -24,7 +24,7 @@ label {
     font-weight:700;
 }
 body {
-    background-color:lightgray;
+/*    background-color:lightgray;*/
     margin: 0;
 }
 nav {
@@ -101,8 +101,14 @@ nav > ul > li > a {
     color: white;
     padding: 0.5rem;
 }
-downloads {
+div#keys {
+    padding-bottom: 2rem;
+}
+downloads.DL {
     display:block;
+    
+    margin: 0;
+    
 }
 big {
     font: 4rem ubuntu;
@@ -144,11 +150,22 @@ div.Container {
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
-div.Container#boxContainer, h2#sectionHomeHeader{
-    background: lightgray;
+div.Container#boxContainer, h2.SectionHeader{
     margin:0;
 }
-h2#sectionHomeHeader {
+div.Container#boxContainer, h2#sectionHomeHeader,
+sourcecode > div.Container, sourcecode > header{
+    background: lightgray;
+}
+div.Container#aboutContainer,
+roadmap > header > h2,
+roadmap > div.Container,
+contact > header > h2,
+contact > div.Container{
+    background-color: #eee;
+}
+
+h2.SectionHeader {
     padding: 0.5rem;
 }
 div.LeftCol {
@@ -188,6 +205,9 @@ div.RighCol {
 * {
     box-sizing: border-box;
 }
+hr {
+    margin: 0;
+}
 
 header > h2.SectionHeader{
     text-align: center;
@@ -216,6 +236,17 @@ br.ZeroTall {
 p.PH {
     font-size: 1.5rem;
 }
+about.AboutSection > header > h2.SectionHeader,
+about.AboutSection > div.Contaier{
+    background-color: #eee;
+}
+downloads > header > h2 ,
+downloads > div.Container {
+    background-color: lightgray;
+    margin: 0;
+    padding: 1rem;
+}
+
 
 .spacer {
     padding-right: 12px;
@@ -234,7 +265,10 @@ beta, beta > div > a{
 NYI {
     color:dimgray;
 }
+.DLButton {
+    box-shadow: 0.2rem 0.2rem 2px 2px gray;
 
+}
 #LSRDL, #CEBDL {
     display: block;
 }
@@ -314,7 +348,7 @@ div.DLContainer {
     img.ChromiumPic {
         width:65%;
         max-height: inherit;
-        display: block;
+        display: none;
         margin: auto;
     }
     div.DLSubsection {
