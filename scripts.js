@@ -32,4 +32,5 @@ window.onload = function(){
     if (opSys == "Windows" || opSys == "Linux") {
         document.getElementById("otherDL").className += " HideMe";
     }
+    alert("OS: "+opSys);
 }
