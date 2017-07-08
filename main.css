@@ -51,7 +51,7 @@ nav > ul.NavBar > li#buttonExpander {
 }
 /*-----default_font-----*/
 nav > ul.NavBar > li {
-    font: 1rem ubuntu, sans-serif;
+    font: 1.5rem ubuntu, sans-serif;
 }
 p {
     font: 1rem;
@@ -127,11 +127,11 @@ button {
     display: block;
     text-align: center;
 }
-.container {
+div.Container {
     widows: 100%;
     margin: auto;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 div.LeftCol {
     margin: auto;
@@ -173,6 +173,7 @@ div.RighCol {
 
 header > h2.SectionHomeHeader{
     text-align: center;
+    font-size: 3rem;
 }
 div.box {
     background-color: lightgray;
@@ -287,9 +288,7 @@ div.DLContainer {
         margin: 0;
     }
     div.box {
-        padding: 0.5rem;
         display: block;
-/*        height: 100vw;*/
     }
     div.LeftCol {
         padding-left: 20%;
