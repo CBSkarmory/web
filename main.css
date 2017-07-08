@@ -19,7 +19,10 @@ div.LSR, div.CEB {
     display: block;
     margin: auto;
 }
-
+label {
+    font: 4rem ubuntu;
+    font-weight:700;
+}
 body {
     background-color:lightgray;
     margin: 0;
@@ -164,6 +167,37 @@ div.RighCol {
 .col-11 {width: 91.67%;}
 .col-12 {width: 100%;}
 
+* {
+    box-sizing: border-box;
+}
+
+header > h2.SectionHomeHeader{
+    text-align: center;
+}
+div.box {
+    background-color: lightgray;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5),
+        1px 1px 4px 0px;
+    display: block;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    
+}
+img.FastPic {
+/*    margin: 1rem;*/
+    margin-bottom: 0;
+    width: 25%;
+}
+br.ZeroTall {
+    line-height: 0;
+}
+p.PH {
+    font-size: 1.5rem;
+}
+
 .spacer {
     padding-right: 12px;
     overflow: hidden
@@ -207,12 +241,13 @@ input.MessageBox {
 input[type="text"] {
     border-radius: 0.5rem;
 }
-p.PH {
+p.NoMargin {
     margin:0px;
 }
 div.DLContainer {
     margin-top: 0.5rem;
 }
+
 /*-----mobile-----*/
 @media screen and (max-width:1199px){
     nav > ul.NavBar:not(.Open) > li:not(:nth-child(1)) {
@@ -247,9 +282,14 @@ div.DLContainer {
     }
 
     /*------Mobile_spacing------*/
-    .col-6 {
+    .col-6, .col-4 {
         width: 100%;
         margin: 0;
+    }
+    div.box {
+        padding: 0.5rem;
+        display: block;
+/*        height: 100vw;*/
     }
     div.LeftCol {
         padding-left: 20%;
