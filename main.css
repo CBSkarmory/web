@@ -160,8 +160,8 @@ sourcecode > div.Container, sourcecode > header{
 div.Container#aboutContainer,
 roadmap > header > h2,
 roadmap > div.Container,
-contact > header > h2,
-contact > div.Container{
+footer > header > h2,
+footer > div.Container{
     background-color: #eee;
 }
 
