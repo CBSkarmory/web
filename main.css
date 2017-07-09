@@ -119,6 +119,16 @@ h1,h2,h3,h4,h5,h6,h7,p,form,downloads {
 lumi {
     color:chartreuse;
 }
+div.JSBlocked > h1{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: red;
+    color: white;
+}
+div.JSBlocked.HideMe {
+    display: none !important;
+}
 button.DLButton {
     font: 2.5rem ubuntu;
     font-weight: 700;
