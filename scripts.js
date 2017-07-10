@@ -18,11 +18,8 @@ window.onresize = function ( ) {
     }
 };
 
-//detect OS for DL button, verify that JS is working
+//detect OS for DL button
 window.onload = function ( ) {
-    //JS check
-    var msgBlocked = document.getElementById("blockJSMsg");
-    msgBlocked.className += " HideMe";
     //detect
     var userAgent = navigator.userAgent.toLocaleLowerCase();
     var opSys = "idk";

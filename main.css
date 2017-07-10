@@ -139,7 +139,7 @@ button.DLButton {
 button.DLButton.HideMe {
     display: none;
 }
-button#submit {
+input#submitButton {
     color: white;
     background: green; /*backup in case gradients are not supported*/
     background: linear-gradient(lightgreen, green);
