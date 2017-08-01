@@ -24,7 +24,7 @@ label {
     font-weight:700;
 }
 body {
-/*    background-color:lightgray;*/
+    /*    background-color:lightgray;*/
     margin: 0;
 }
 nav {
@@ -106,9 +106,9 @@ div#keys {
 }
 downloads.DL {
     display:block;
-    
+
     margin: 0;
-    
+
 }
 big {
     font: 4rem ubuntu;
@@ -231,10 +231,10 @@ div.box {
     padding: 2rem;
     padding-bottom: 3rem;
     border-radius: 1rem;
-    
+
 }
 img.FastPic {
-/*    margin: 1rem;*/
+    /*    margin: 1rem;*/
     margin-bottom: 0;
     width: 25%;
 }
@@ -305,6 +305,19 @@ p.NoMargin {
 div.DLContainer {
     margin-top: 0.5rem;
 }
+div.ToTop {
+    padding: 0px;
+    margin: 0px !important;
+    display: block;
+    text-align: center;
+    background-color: cornflowerblue; /*backup in case gradients are not supported*/
+    background: radial-gradient(lightblue, cornflowerblue);
+}
+div.ToTop > a {
+    color: white;
+    text-decoration: none;
+    font: 3rem ubuntu;
+}
 
 /*-----mobile-----*/
 @media screen and (max-width:1199px){
@@ -341,6 +354,7 @@ div.DLContainer {
         text-align: left;
     }
 
+
     /*------Mobile_spacing------*/
     .col-6, .col-4 {
         width: 100%;
@@ -362,6 +376,12 @@ div.DLContainer {
     div.DLSubsection {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+    }
+    textArea.MessageBox {
+        height: 5rem;
+    }
+    input#submitButton {
+        font-size: 2rem;
     }
 
     /*------Mobile_font------*/
