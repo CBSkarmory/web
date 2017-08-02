@@ -11,7 +11,7 @@ function updateMenu(forceClose) {
 }
 
 //automatically closes menu (while hiding) upon resize to desktop res
-window.onresize = function ( ) {
+window.onresize = function () {
     //seems to be desktop
     if (window.innerWidth > 1199) {
         updateMenu(true);
@@ -19,7 +19,7 @@ window.onresize = function ( ) {
 };
 
 //detect OS for DL button
-window.onload = function ( ) {
+window.onload = function () {
     //detect
     var userAgent = navigator.userAgent.toLocaleLowerCase();
     var opSys = "idk";
