@@ -127,6 +127,9 @@ noscript.JSBlocked > h1{
     background: red;
     color: white;
 }
+.DLButtons > a {
+    text-decoration: none;
+}
 button.DLButton {
     font: 2.5rem ubuntu;
     font-weight: 700;
