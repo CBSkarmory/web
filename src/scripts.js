@@ -24,7 +24,7 @@ window.onload = function () {
     var userAgent = navigator.userAgent.toLocaleLowerCase();
     var opSys = "idk";
     if (navigator.appVersion.indexOf("Win")!=-1) {opSys="Windows";}
-    if (navigator.appVersion.indexOf("Linux")!=-1) {opSys="Linux";}
+    if (userAgent.indexOf("linux")!=-1) {opSys="Linux";}
     if (userAgent.indexOf("android")!=-1) {opSys = "Android";}
     if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) opSys = "iOS";
     //hide not applicables
