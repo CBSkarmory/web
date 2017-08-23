@@ -1,4 +1,4 @@
 # web
-These are joke pages.
+This is a joke webpage. See downloads section (on page) for more information.
 
-Please see https://cbskarmory.github.io/web/
+Go [here](https://cbskarmory.github.io/web/)
